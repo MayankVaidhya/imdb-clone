@@ -2,6 +2,8 @@ import React from "react";
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
+import { IoMdContact } from "react-icons/io";
+import { MdPrivacyTip } from "react-icons/md";
 import Link from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
 
@@ -11,6 +13,8 @@ export default function Header() {
       <div className="flex gap-4">
         <MenuItem title="home" address="/" Icon={AiFillHome} />
         <MenuItem title="about" address="/about" Icon={BsFillInfoCircleFill} />
+        <MenuItem title="contact" address="/contact" Icon={IoMdContact} />
+        <MenuItem title="privacy" address="/privacy" Icon={MdPrivacyTip} />
       </div>
       <div className="flex items-center gap-4">
         <DarkModeSwitch />
